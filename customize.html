@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customize Song Viewer</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="customize.js" defer></script>
+</head>
+
+<body>
+<nav>
+  <div class="logo">This was terrible, I am so sorry.</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="hiphop.html">Hip-Hop</a></li>
+    <li><a href="Alternative.html">Alternative</a></li>
+    <li><a href="Pop.html">Pop</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="customize.html">Customize</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Customize This Page</h1>
+
+  <div class="card">
+
+    <!-- Background Color -->
+    <h2>Pick a Background Color:</h2>
+    <input type="color" id="bgColor">
+    <button id="applyBg" type="button">Apply Background</button>
+
+    <!-- Song Picker -->
+    <h2>Select a Song:</h2>
+    <select id="songPicker">
+      <option value="pop">Pop — Chappell Roan</option>
+      <option value="hiphop">Hip-Hop — Kid Cudi</option>
+      <option value="alternative">Alternative — Hot Mulligan</option>
+    </select>
+
+    <!-- Image Display -->
+    <h2>Song Image:</h2>
+    <img id="songImage" 
+         src="Chappell.png" 
+         class="responsive" 
+         alt="Song Image">
+
+  </div>
+</div>
+
+</body>
+</html>

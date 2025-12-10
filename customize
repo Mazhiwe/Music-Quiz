@@ -1,0 +1,32 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+  const picker = document.getElementById("songPicker");
+  const image = document.getElementById("songImage");
+
+  picker.addEventListener("change", function () {
+    const choice = this.value;
+
+    if (choice === "pop") {
+      image.src = "Chappell.png";  
+      image.alt = "Chappell Roan - Good Luck, Babe!";
+    }
+    else if (choice === "hiphop") {
+      image.src = "KidCudi.jpg";   
+      image.alt = "Kid Cudi - Just What I Am";
+    }
+    else if (choice === "alternative") {
+      image.src = "HotMulligan.jpg";  
+      image.alt = "Hot Mulligan - Monica Lewinskibidi";
+    }
+  });
+
+
+  const bgPicker = document.getElementById("bgColor");
+  const bgButton = document.getElementById("applyBg");
+
+  bgButton.addEventListener("click", () => {
+    const newColor = bgPicker.value;
+    document.body.style.backgroundColor = newColor;
+  });
+
+});

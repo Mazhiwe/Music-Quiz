@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Quiz</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<nav>
+  <div class="logo">Which of my Spotify Songs are you?</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="hiphop.html">Hip-Hop</a></li>
+    <li><a href="Alternative.html">Alternative</a></li>
+    <li><a href="Pop.html">Pop</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="customize.html">Customize</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <h1>Music Personality Quiz</h1>
+
+  <form id="musicQuiz" class="card">
+
+    <h3>1. What mood best describes you?</h3>
+    <label><input type="radio" name="mood" value="pop"> Happy</label>
+    <label><input type="radio" name="mood" value="alternative"> Emotional</label>
+    <label><input type="radio" name="mood" value="hiphop"> Confident</label>
+
+    <h3>2. Pick an animal:</h3>
+    <select id="object">
+      <option value="pop">Unicorn</option>
+      <option value="alternative">Koala</option>
+      <option value="hiphop">Lion</option>
+    </select>
+
+    <h3>3. Which Season(s) the best?</h3>
+    <label><input type="radio" name="listen" value="pop"> Spring</label>
+    <label><input type="radio" name="listen" value="alternative"> Fall/Winter</label>
+    <label><input type="radio" name="listen" value="hiphop"> Summer</label>
+
+    <button type="submit">Click me to find out</button>
+  </form>
+
+  <p id="result"></p>
+</div>
+
+</body>
+</html>
